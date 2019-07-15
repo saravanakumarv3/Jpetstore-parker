@@ -46,15 +46,6 @@ node {
   }           
 
   }
-
-	stage('SonarQube Analysis'){
-		def mvnHome = tool name : 'MVN_Local', type:'maven'
-		withSonarQubeEnv('sonar-server'){
-			 "SONAR_USER_HOME=/opt/bitnami/jenkins/.sonar ${mvnHome}/bin/mvn sonar:sonar"
-			sh  "${mvnHome}/bin/mvn sonar:sonar"
-		}
-	}
-	
 	
 
 
