@@ -25,7 +25,7 @@ node {
   
   stage ('Cucumber'){
   withMaven(jdk: 'JDK_local', maven: 'MVN_Local') {
-      sh 'mvn test'	     
+      sh 'mvn test -Dtest=Runner'	     
 	  echo("************************** Test Result Upload Started to Velocity****************************")
                         try{
                         step([$class: 'UploadJUnitTestResult',
