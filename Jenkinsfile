@@ -44,6 +44,10 @@ node {
                        
             echo("************************** Test Result Uploaded Successful to Velocity****************************")
   }           
+                    cucumber buildStatus: "Success",
+                    fileIncludePattern: "**/cucumber.json",
+                    jsonReportDirectory: 'target'
+
 
   }
 	
