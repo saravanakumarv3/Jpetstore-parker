@@ -29,13 +29,14 @@ public class stepDefinition {
 
   @Given("^I open chrome browser$")
   public void iOpenChromeBrowser() throws Throwable {
-    webDriver = DriverInitializer.getDriver("chrome");
+   // webDriver = DriverInitializer.getDriver("chrome");
+   System.out.println("open chrome browser");
   }
 
   @When("^I navigate to index\\.html page$")
   public void iNavigateToIndexHtmlPage() throws Throwable {
     // webDriver.get(DriverInitializer.getProperty("login.url"));
-    System.out.println("Hello world");
+    System.out.println("Navigate to index.html");
   }
 
   @And("^I click on Enter the store button$")
@@ -43,11 +44,11 @@ public class stepDefinition {
     // WebElement webElement = webDriver.findElement(By.id("enter"));
     // webElement.click();
 
-    System.out.println("Hello world");
+    System.out.println("click on Enter the store button");
   }
 
   @Then("^Store should be visible$")
   public void iStorevisible() throws Throwable {
-    System.out.println("Welcome to the store");
+    System.out.println("Store should be visible");
   }
 }
