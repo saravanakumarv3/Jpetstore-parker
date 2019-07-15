@@ -21,7 +21,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(monochrome = true, features = "src/test/resources/feature", glue = {
+@CucumberOptions(monochrome = true, features = "src/test/resources/Feature", glue = {
     "org.mybatis.cuketest" }, plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json" })
 public class Runner {
 
