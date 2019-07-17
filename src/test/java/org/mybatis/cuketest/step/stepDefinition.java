@@ -29,8 +29,8 @@ public class stepDefinition {
 
   @Given("^I open chrome browser$")
   public void iOpenChromeBrowser() throws Throwable {
-   // webDriver = DriverInitializer.getDriver("chrome");
-   System.out.println("open chrome browser");
+    // webDriver = DriverInitializer.getDriver("chrome");
+    System.out.println("open chrome browser");
   }
 
   @When("^I navigate to index\\.html page$")
