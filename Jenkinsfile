@@ -26,7 +26,7 @@ node {
 
   stage ('Cucumber'){
 	  withMaven(jdk: 'JDK_local', maven: 'MVN_Local') {
-		  sh 'mvn test -Dtest=Runner'    
+		  sh 'mvn test -Dtest=Runner -Djacoco.skip=true'    
 	  }
 	  
 	  echo("************************** Test Result Upload Started to Velocity****************************")
