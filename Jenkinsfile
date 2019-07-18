@@ -37,7 +37,7 @@ node {
 					filePath: "target/surefire-reports/TEST-org.mybatis.jpetstore.service.OrderServiceTest.xml",
 					tenant_id: "5ade13625558f2c6688d15ce",
 					appName: "Jpetstore",
-					appExtId: "16914a46-e85a-ada1-33b9-46a466a8e290",
+					appExtId: "91873349-b13d-4ba2-918d-1b515bfa25ff",
 					name: "Executed in JUnit - ${currentBuild.displayName}",
 					testSetName: "Sample Test Run from Jenkins"]
 			   
