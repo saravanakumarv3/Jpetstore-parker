@@ -74,7 +74,7 @@ stage ("Appscan"){
 	//appscan application: '17969f05-19dd-4143-b7e2-c52a3336db18', credentials: 'Credential for ASOC', failBuild: true, failureConditions: [failure_condition(failureType: 'high', threshold: 20)], name: 'test_07012019', scanner: static_analyzer(hasOptions: false, target: '/var/jenkins_home/jobs/jpetstore'), type: 'Static Analyzer', wait: true
  }
   stage('Publish Artificats to UCD'){
-	  
+	  /*
    step([$class: 'UCDeployPublisher',
         siteName: 'ucd-server',
         component: [
@@ -121,10 +121,12 @@ stage ("Appscan"){
 			 deployReqProps: '', 
 			 deployVersions: "JpetComponent:1.${BUILD_NUMBER}"], 
 		siteName: 'ucd-server'])
+		
+		*/
  }
  
 stage ('HCL One Test') {
-	sleep 25
+	// sleep 25
 	// echo 'Executing HCL One test ... '
 	//sh '/var/jenkins_home/onetest/hcl-onetest-command.sh'
  }
